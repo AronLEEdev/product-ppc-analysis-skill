@@ -1,0 +1,544 @@
+{
+ "note": "Calibration fixture: Amazon Ads suggested bids exported 2026-11-10 for our own live campaigns (exact/phrase/broad keyword targets). No search volumes in the export, so weighting is equal.",
+ "product": "Canvas Tote (NaturalBenefit)",
+ "capturedOn": "2026-11-10",
+ "source": "Amazon Ads Campaign Manager suggested bids",
+ "keywords": [
+  {
+   "phrase": "canvas shopping bags",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.36,
+   "bidMid": 0.48,
+   "bidHigh": 0.6
+  },
+  {
+   "phrase": "purse tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.32,
+   "bidMid": 0.43,
+   "bidHigh": 0.53
+  },
+  {
+   "phrase": "canvas travel bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.34,
+   "bidMid": 0.44,
+   "bidHigh": 0.61
+  },
+  {
+   "phrase": "bible bag tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.32,
+   "bidMid": 0.38,
+   "bidHigh": 0.48
+  },
+  {
+   "phrase": "zip up tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.34,
+   "bidMid": 0.46,
+   "bidHigh": 0.53
+  },
+  {
+   "phrase": "tote bag for bible",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.32,
+   "bidMid": 0.39,
+   "bidHigh": 0.49
+  },
+  {
+   "phrase": "small canvas bag with zipper",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.32,
+   "bidMid": 0.36,
+   "bidHigh": 0.45
+  },
+  {
+   "phrase": "small canvas tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.94,
+   "bidMid": 1.07,
+   "bidHigh": 1.19
+  },
+  {
+   "phrase": "travel tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.7,
+   "bidMid": 0.92,
+   "bidHigh": 1.16
+  },
+  {
+   "phrase": "small tote bag with zipper",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.85,
+   "bidMid": 1.0,
+   "bidHigh": 1.17
+  },
+  {
+   "phrase": "canvas bags with handles",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.88,
+   "bidMid": 1.17,
+   "bidHigh": 1.47
+  },
+  {
+   "phrase": "tote bag for women work",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.71,
+   "bidMid": 0.87,
+   "bidHigh": 1.02
+  },
+  {
+   "phrase": "fioretto canvas tote bag for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.7,
+   "bidMid": 0.87,
+   "bidHigh": 1.11
+  },
+  {
+   "phrase": "tote bag with pockets",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.87,
+   "bidHigh": 1.08
+  },
+  {
+   "phrase": "medium tote bag for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.56,
+   "bidMid": 0.77,
+   "bidHigh": 0.87
+  },
+  {
+   "phrase": "structured tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.63,
+   "bidMid": 0.85,
+   "bidHigh": 0.97
+  },
+  {
+   "phrase": "school tote bag for women college",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.66,
+   "bidMid": 0.75,
+   "bidHigh": 0.9
+  },
+  {
+   "phrase": "sturdy tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.66,
+   "bidMid": 0.74,
+   "bidHigh": 0.82
+  },
+  {
+   "phrase": "tote bag travel",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.73,
+   "bidMid": 0.97,
+   "bidHigh": 1.21
+  },
+  {
+   "phrase": "nurse tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.56,
+   "bidMid": 0.65,
+   "bidHigh": 0.76
+  },
+  {
+   "phrase": "tote with zipper",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.68,
+   "bidMid": 0.85,
+   "bidHigh": 0.95
+  },
+  {
+   "phrase": "tote work bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.83,
+   "bidMid": 1.04,
+   "bidHigh": 1.17
+  },
+  {
+   "phrase": "small zipper tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.78,
+   "bidMid": 0.88,
+   "bidHigh": 1.04
+  },
+  {
+   "phrase": "college tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.83,
+   "bidMid": 1.07,
+   "bidHigh": 1.24
+  },
+  {
+   "phrase": "tote bag for books",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.69,
+   "bidMid": 0.92,
+   "bidHigh": 1.15
+  },
+  {
+   "phrase": "brown tote bag for school",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.71,
+   "bidMid": 0.82,
+   "bidHigh": 1.02
+  },
+  {
+   "phrase": "canvas tote bags large",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.63,
+   "bidMid": 1.19,
+   "bidHigh": 1.75
+  },
+  {
+   "phrase": "teacher totes",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.61,
+   "bidMid": 0.83,
+   "bidHigh": 1.0
+  },
+  {
+   "phrase": "teacher bags and totes for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.82,
+   "bidMid": 1.05,
+   "bidHigh": 1.24
+  },
+  {
+   "phrase": "tote bag nurse",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.91,
+   "bidMid": 1.21,
+   "bidHigh": 1.51
+  },
+  {
+   "phrase": "womens work tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.8,
+   "bidHigh": 0.95
+  },
+  {
+   "phrase": "zippered tote bags for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.71,
+   "bidMid": 0.97,
+   "bidHigh": 1.14
+  },
+  {
+   "phrase": "cute tote bag for school",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.71,
+   "bidMid": 0.95,
+   "bidHigh": 1.19
+  },
+  {
+   "phrase": "carry all tote bags women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.56,
+   "bidMid": 0.85,
+   "bidHigh": 0.94
+  },
+  {
+   "phrase": "travel totes for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.7,
+   "bidMid": 0.94,
+   "bidHigh": 1.17
+  },
+  {
+   "phrase": "tote for school",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.66,
+   "bidMid": 0.82,
+   "bidHigh": 0.9
+  },
+  {
+   "phrase": "work tote for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.63,
+   "bidMid": 0.73,
+   "bidHigh": 0.85
+  },
+  {
+   "phrase": "canvas book tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.71,
+   "bidMid": 0.95,
+   "bidHigh": 1.19
+  },
+  {
+   "phrase": "canvas work tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.54,
+   "bidMid": 0.63,
+   "bidHigh": 0.82
+  },
+  {
+   "phrase": "office tote bag for women for work",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.58,
+   "bidMid": 0.95,
+   "bidHigh": 1.07
+  },
+  {
+   "phrase": "tote bag purse for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.51,
+   "bidMid": 0.73,
+   "bidHigh": 0.9
+  },
+  {
+   "phrase": "tote travel bag for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.6,
+   "bidMid": 0.68,
+   "bidHigh": 0.82
+  },
+  {
+   "phrase": "school tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.8,
+   "bidMid": 0.97,
+   "bidHigh": 1.09
+  },
+  {
+   "phrase": "nurse bags and totes for work",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.6,
+   "bidMid": 0.77,
+   "bidHigh": 0.88
+  },
+  {
+   "phrase": "tote bag for church",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.68,
+   "bidMid": 0.9,
+   "bidHigh": 1.13
+  },
+  {
+   "phrase": "tote bag divider",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.74,
+   "bidMid": 0.99,
+   "bidHigh": 1.23
+  },
+  {
+   "phrase": "office tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.88,
+   "bidHigh": 1.02
+  },
+  {
+   "phrase": "nurse tote bags for work",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.63,
+   "bidMid": 0.73,
+   "bidHigh": 0.94
+  },
+  {
+   "phrase": "totebags for school",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.87,
+   "bidHigh": 1.08
+  },
+  {
+   "phrase": "tote school bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.77,
+   "bidMid": 1.02,
+   "bidHigh": 1.27
+  },
+  {
+   "phrase": "tote bag with zipper for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.87,
+   "bidHigh": 1.08
+  },
+  {
+   "phrase": "pink tote bag for school",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.68,
+   "bidMid": 0.9,
+   "bidHigh": 1.13
+  },
+  {
+   "phrase": "teacher bag tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.78,
+   "bidMid": 0.92,
+   "bidHigh": 1.12
+  },
+  {
+   "phrase": "water bottle tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.58,
+   "bidMid": 0.8,
+   "bidHigh": 0.9
+  },
+  {
+   "phrase": "shoulder tote bag for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.51,
+   "bidMid": 0.83,
+   "bidHigh": 1.0
+  },
+  {
+   "phrase": "work tote with compartments",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.66,
+   "bidMid": 0.9,
+   "bidHigh": 1.05
+  },
+  {
+   "phrase": "tote bag for nurses",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.75,
+   "bidMid": 1.0,
+   "bidHigh": 1.25
+  },
+  {
+   "phrase": "lap top tote bag women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.53,
+   "bidMid": 0.62,
+   "bidHigh": 0.71
+  },
+  {
+   "phrase": "bolso tote bag para mujer",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.56,
+   "bidMid": 0.64,
+   "bidHigh": 0.75
+  },
+  {
+   "phrase": "nursing tote bags for nurses",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.83,
+   "bidMid": 0.99,
+   "bidHigh": 1.11
+  },
+  {
+   "phrase": "bible bags for women tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.32,
+   "bidMid": 0.35,
+   "bidHigh": 0.38
+  },
+  {
+   "phrase": "large tote bag for women",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.49,
+   "bidMid": 0.75,
+   "bidHigh": 0.95
+  },
+  {
+   "phrase": "multi pocket tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.87,
+   "bidHigh": 1.08
+  },
+  {
+   "phrase": "tote with water bottle pocket",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.62,
+   "bidMid": 0.83,
+   "bidHigh": 1.04
+  },
+  {
+   "phrase": "work bags for women tote",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.63,
+   "bidMid": 0.73,
+   "bidHigh": 0.88
+  },
+  {
+   "phrase": "stand up tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.75,
+   "bidMid": 1.0,
+   "bidHigh": 1.25
+  },
+  {
+   "phrase": "large teacher tote bag",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.65,
+   "bidMid": 0.87,
+   "bidHigh": 0.97
+  }
+ ]
+}

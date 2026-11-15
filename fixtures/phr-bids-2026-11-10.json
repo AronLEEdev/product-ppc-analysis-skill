@@ -1,0 +1,992 @@
+{
+ "note": "Calibration fixture: Amazon Ads suggested bids exported 2026-11-10 for our own live campaigns (exact/phrase/broad keyword targets). No search volumes in the export, so weighting is equal.",
+ "product": "Pet Hair Remover glove 1PC (NaturalBenefit)",
+ "capturedOn": "2026-11-10",
+ "source": "Amazon Ads Campaign Manager suggested bids",
+ "keywords": [
+  {
+   "phrase": "lint mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.02,
+   "bidMid": 1.36,
+   "bidHigh": 1.7
+  },
+  {
+   "phrase": "pet hair removal tool for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.75,
+   "bidMid": 1.0,
+   "bidHigh": 1.25
+  },
+  {
+   "phrase": "dog hair car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.66,
+   "bidMid": 0.88,
+   "bidHigh": 1.11
+  },
+  {
+   "phrase": "dog hair remover carpet car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.42,
+   "bidMid": 0.56,
+   "bidHigh": 0.7
+  },
+  {
+   "phrase": "dog hair remover for car carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.69,
+   "bidMid": 0.92,
+   "bidHigh": 1.15
+  },
+  {
+   "phrase": "magic glove pet hair remover",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 0.86,
+   "bidMid": 1.25,
+   "bidHigh": 1.41
+  },
+  {
+   "phrase": "pet hair car remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.74,
+   "bidMid": 0.99,
+   "bidHigh": 1.23
+  },
+  {
+   "phrase": "pet hair electrostatic glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.71,
+   "bidMid": 0.95,
+   "bidHigh": 1.19
+  },
+  {
+   "phrase": "pet hair removal for cats",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.8,
+   "bidMid": 1.07,
+   "bidHigh": 1.34
+  },
+  {
+   "phrase": "pet mitt hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 0.98,
+   "bidMid": 1.09,
+   "bidHigh": 1.35
+  },
+  {
+   "phrase": "cat hair gloves",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 3.84,
+   "bidMid": 4.25,
+   "bidHigh": 4.79
+  },
+  {
+   "phrase": "fur mitt",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 3.17,
+   "bidMid": 4.23,
+   "bidHigh": 5.29
+  },
+  {
+   "phrase": "dog hair mitt glove",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.22,
+   "bidMid": 2.96,
+   "bidHigh": 3.7
+  },
+  {
+   "phrase": "dog hair removal glove",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.58,
+   "bidMid": 3.48,
+   "bidHigh": 3.89
+  },
+  {
+   "phrase": "lint mitt",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.89,
+   "bidMid": 3.86,
+   "bidHigh": 4.82
+  },
+  {
+   "phrase": "pet fur remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.36,
+   "bidMid": 3.15,
+   "bidHigh": 3.93
+  },
+  {
+   "phrase": "dog hair glove",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.12,
+   "bidMid": 2.58,
+   "bidHigh": 2.95
+  },
+  {
+   "phrase": "dog fur remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.44,
+   "bidMid": 4.59,
+   "bidHigh": 5.74
+  },
+  {
+   "phrase": "lint mitt for pet hair",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.46,
+   "bidMid": 3.28,
+   "bidHigh": 4.1
+  },
+  {
+   "phrase": "pet hair removal gloves for furniture",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.82,
+   "bidMid": 3.76,
+   "bidHigh": 4.7
+  },
+  {
+   "phrase": "cat hair gloves for pet hair removal",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.88,
+   "bidMid": 3.84,
+   "bidHigh": 4.8
+  },
+  {
+   "phrase": "pet hair remover laundry",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.81,
+   "bidMid": 2.41,
+   "bidHigh": 3.02
+  },
+  {
+   "phrase": "dog hair remover for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.77,
+   "bidMid": 2.36,
+   "bidHigh": 2.95
+  },
+  {
+   "phrase": "pet hair remover for couch",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "cat hair removal glove",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 1.87,
+   "bidMid": 2.5,
+   "bidHigh": 3.12
+  },
+  {
+   "phrase": "dog fur remover for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.13,
+   "bidMid": 2.84,
+   "bidHigh": 3.55
+  },
+  {
+   "phrase": "pet hair remover mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.31,
+   "bidMid": 3.45,
+   "bidHigh": 4.06
+  },
+  {
+   "phrase": "cat fur",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.87,
+   "bidMid": 2.18,
+   "bidHigh": 2.43
+  },
+  {
+   "phrase": "pet hair remover for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "cat fur remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.56,
+   "bidMid": 4.74,
+   "bidHigh": 5.93
+  },
+  {
+   "phrase": "fur remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.14,
+   "bidMid": 4.18,
+   "bidHigh": 5.23
+  },
+  {
+   "phrase": "car pet hair removal tool",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.89,
+   "bidMid": 2.52,
+   "bidHigh": 3.15
+  },
+  {
+   "phrase": "cat hair gloves",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.46,
+   "bidMid": 4.61,
+   "bidHigh": 5.76
+  },
+  {
+   "phrase": "cat hair remover carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.85,
+   "bidMid": 2.47,
+   "bidHigh": 3.08
+  },
+  {
+   "phrase": "dog hair remover car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.77,
+   "bidMid": 2.36,
+   "bidHigh": 2.95
+  },
+  {
+   "phrase": "electrostatic pet hair remover gloves",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 1.91,
+   "bidMid": 2.55,
+   "bidHigh": 3.19
+  },
+  {
+   "phrase": "pet hair removal for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.76,
+   "bidMid": 2.35,
+   "bidHigh": 2.93
+  },
+  {
+   "phrase": "pet hair remover for carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "best dog hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.96,
+   "bidMid": 2.62,
+   "bidHigh": 3.27
+  },
+  {
+   "phrase": "best pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.89,
+   "bidMid": 2.52,
+   "bidHigh": 3.15
+  },
+  {
+   "phrase": "couch hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.66,
+   "bidMid": 2.21,
+   "bidHigh": 2.76
+  },
+  {
+   "phrase": "dog hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.99,
+   "bidMid": 2.65,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "dog hair remover carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.79,
+   "bidMid": 2.38,
+   "bidHigh": 2.97
+  },
+  {
+   "phrase": "fur removal glove",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 1.88,
+   "bidMid": 2.5,
+   "bidHigh": 3.13
+  },
+  {
+   "phrase": "hair remover for carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.73,
+   "bidMid": 2.31,
+   "bidHigh": 2.89
+  },
+  {
+   "phrase": "lint remover for pet hair",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.6,
+   "bidMid": 3.5,
+   "bidHigh": 4.37
+  },
+  {
+   "phrase": "pet hair remover for bedding",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.84,
+   "bidMid": 2.45,
+   "bidHigh": 3.06
+  },
+  {
+   "phrase": "pet hair remover mitt",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 2.04,
+   "bidMid": 2.72,
+   "bidHigh": 3.4
+  },
+  {
+   "phrase": "ball hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.8,
+   "bidMid": 2.4,
+   "bidHigh": 3.0
+  },
+  {
+   "phrase": "best cat hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.21,
+   "bidMid": 3.54,
+   "bidHigh": 4.08
+  },
+  {
+   "phrase": "best dog hair remover for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.98,
+   "bidMid": 2.64,
+   "bidHigh": 3.29
+  },
+  {
+   "phrase": "carpet dog hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.7,
+   "bidMid": 1.87,
+   "bidHigh": 2.06
+  },
+  {
+   "phrase": "carpet pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.79,
+   "bidMid": 2.38,
+   "bidHigh": 2.97
+  },
+  {
+   "phrase": "cat fur cleaner",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.92,
+   "bidMid": 2.14,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "cat fur remover for furniture",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.75,
+   "bidMid": 2.33,
+   "bidHigh": 2.91
+  },
+  {
+   "phrase": "cat grooming gloves hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.06,
+   "bidMid": 2.8,
+   "bidHigh": 3.27
+  },
+  {
+   "phrase": "cat hair grooming glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.88,
+   "bidMid": 2.51,
+   "bidHigh": 3.14
+  },
+  {
+   "phrase": "cat hair mit",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.91,
+   "bidMid": 3.88,
+   "bidHigh": 4.84
+  },
+  {
+   "phrase": "cat hair mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.56,
+   "bidMid": 3.42,
+   "bidHigh": 4.27
+  },
+  {
+   "phrase": "cat hair mitt",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 1.88,
+   "bidMid": 2.5,
+   "bidHigh": 3.13
+  },
+  {
+   "phrase": "cat hair remover for bedding",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.8,
+   "bidMid": 2.36,
+   "bidHigh": 3.08
+  },
+  {
+   "phrase": "cat hair remover mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.21,
+   "bidMid": 2.53,
+   "bidHigh": 3.09
+  },
+  {
+   "phrase": "cat petting gloves for hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.22,
+   "bidMid": 2.56,
+   "bidHigh": 3.09
+  },
+  {
+   "phrase": "couch cat hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.89,
+   "bidMid": 2.52,
+   "bidHigh": 3.15
+  },
+  {
+   "phrase": "couch pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.76,
+   "bidMid": 2.35,
+   "bidHigh": 2.93
+  },
+  {
+   "phrase": "dog fur remover for couch",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.03,
+   "bidMid": 2.7,
+   "bidHigh": 3.38
+  },
+  {
+   "phrase": "dog hair couch remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.47,
+   "bidMid": 3.3,
+   "bidHigh": 4.12
+  },
+  {
+   "phrase": "dog hair pickup",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.99,
+   "bidMid": 2.65,
+   "bidHigh": 3.31
+  },
+  {
+   "phrase": "dog hair removal tool for car",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.63,
+   "bidMid": 2.18,
+   "bidHigh": 2.72
+  },
+  {
+   "phrase": "dog hair remover mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.62,
+   "bidMid": 3.33,
+   "bidHigh": 3.81
+  },
+  {
+   "phrase": "electrostatic gloves pet hair",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 1.88,
+   "bidMid": 2.5,
+   "bidHigh": 3.13
+  },
+  {
+   "phrase": "electrostatic hair removal gloves",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.3,
+   "bidMid": 3.06,
+   "bidHigh": 3.83
+  },
+  {
+   "phrase": "electrostatic pet hair removal glove",
+   "match": "broad",
+   "searchVolume": null,
+   "bidLow": 2.24,
+   "bidMid": 2.72,
+   "bidHigh": 3.47
+  },
+  {
+   "phrase": "electrostatic pet hair remover glove",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 1.8,
+   "bidMid": 2.4,
+   "bidHigh": 3.0
+  },
+  {
+   "phrase": "fur mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.62,
+   "bidMid": 2.03,
+   "bidHigh": 2.36
+  },
+  {
+   "phrase": "fur mitt remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.57,
+   "bidMid": 3.42,
+   "bidHigh": 4.28
+  },
+  {
+   "phrase": "fur removal glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.3,
+   "bidMid": 3.06,
+   "bidHigh": 3.83
+  },
+  {
+   "phrase": "glove for cat hair removal",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 1.79,
+   "bidMid": 2.39,
+   "bidHigh": 2.99
+  },
+  {
+   "phrase": "glove to remove pet hair",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.95,
+   "bidMid": 2.16,
+   "bidHigh": 2.66
+  },
+  {
+   "phrase": "hair glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.3,
+   "bidMid": 3.06,
+   "bidHigh": 3.84
+  },
+  {
+   "phrase": "hair gloves",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.3,
+   "bidMid": 3.06,
+   "bidHigh": 3.84
+  },
+  {
+   "phrase": "hair removal gloves for cats",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.88,
+   "bidMid": 2.5,
+   "bidHigh": 3.13
+  },
+  {
+   "phrase": "hair removal mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.26,
+   "bidMid": 3.01,
+   "bidHigh": 3.76
+  },
+  {
+   "phrase": "hair remover carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.73,
+   "bidMid": 2.31,
+   "bidHigh": 2.89
+  },
+  {
+   "phrase": "hand pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.68,
+   "bidMid": 2.22,
+   "bidHigh": 2.55
+  },
+  {
+   "phrase": "lint and pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.23,
+   "bidMid": 3.01,
+   "bidHigh": 3.55
+  },
+  {
+   "phrase": "lint glove",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 3.19,
+   "bidMid": 4.25,
+   "bidHigh": 5.31
+  },
+  {
+   "phrase": "magic mitt pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.18,
+   "bidMid": 2.44,
+   "bidHigh": 3.1
+  },
+  {
+   "phrase": "magic pet hair remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.18,
+   "bidMid": 2.91,
+   "bidHigh": 3.63
+  },
+  {
+   "phrase": "pet hair carpet",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.62,
+   "bidMid": 2.16,
+   "bidHigh": 2.7
+  },
+  {
+   "phrase": "pet hair mitt glove",
+   "match": "phrase",
+   "searchVolume": null,
+   "bidLow": 3.01,
+   "bidMid": 3.48,
+   "bidHigh": 4.56
+  },
+  {
+   "phrase": "pet hair mitten",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.89,
+   "bidMid": 2.52,
+   "bidHigh": 3.15
+  },
+  {
+   "phrase": "pet hair removal gloves for furniture",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.61,
+   "bidMid": 2.14,
+   "bidHigh": 2.68
+  },
+  {
+   "phrase": "pet hair removal mitten",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "pet hair remover balls",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.8,
+   "bidMid": 2.01,
+   "bidHigh": 2.24
+  },
+  {
+   "phrase": "pet hair remover couch",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "pet hair remover detailing",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "pet hair remover electrostatic gloves",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.79,
+   "bidMid": 2.39,
+   "bidHigh": 2.99
+  },
+  {
+   "phrase": "reusable pet hair remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.96,
+   "bidMid": 3.94,
+   "bidHigh": 4.93
+  },
+  {
+   "phrase": "dog hair remover for couch",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.45,
+   "bidMid": 3.26,
+   "bidHigh": 4.08
+  },
+  {
+   "phrase": "pet hair mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.64,
+   "bidMid": 3.52,
+   "bidHigh": 4.4
+  },
+  {
+   "phrase": "pet hair gloves for pet hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.04,
+   "bidMid": 2.43,
+   "bidHigh": 2.81
+  },
+  {
+   "phrase": "pet hair removal mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.7,
+   "bidMid": 3.6,
+   "bidHigh": 4.51
+  },
+  {
+   "phrase": "dog hair mit",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.86,
+   "bidMid": 2.48,
+   "bidHigh": 3.1
+  },
+  {
+   "phrase": "electrostatic pet hair remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.06,
+   "bidMid": 4.08,
+   "bidHigh": 5.1
+  },
+  {
+   "phrase": "dog hair mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.28,
+   "bidMid": 3.04,
+   "bidHigh": 3.8
+  },
+  {
+   "phrase": "cat hair mitt glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.88,
+   "bidMid": 3.84,
+   "bidHigh": 4.8
+  },
+  {
+   "phrase": "dog hair glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.06,
+   "bidMid": 3.88,
+   "bidHigh": 4.44
+  },
+  {
+   "phrase": "pet hair removing glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 3.0,
+   "bidMid": 4.0,
+   "bidHigh": 4.99
+  },
+  {
+   "phrase": "pet mitt hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.67,
+   "bidMid": 1.85,
+   "bidHigh": 2.3
+  },
+  {
+   "phrase": "dog hair gloves for pet hair removal",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.52,
+   "bidMid": 3.37,
+   "bidHigh": 4.21
+  },
+  {
+   "phrase": "x master pet hair removal glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.7,
+   "bidMid": 2.27,
+   "bidHigh": 2.84
+  },
+  {
+   "phrase": "cat hair removal gloves",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.58,
+   "bidMid": 2.11,
+   "bidHigh": 2.64
+  },
+  {
+   "phrase": "cat hair remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.82,
+   "bidMid": 3.76,
+   "bidHigh": 4.7
+  },
+  {
+   "phrase": "dog hair removal couch",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.7,
+   "bidMid": 2.11,
+   "bidHigh": 2.77
+  },
+  {
+   "phrase": "dog hair remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.24,
+   "bidMid": 2.99,
+   "bidHigh": 3.74
+  },
+  {
+   "phrase": "electrostatic pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.58,
+   "bidMid": 2.11,
+   "bidHigh": 2.64
+  },
+  {
+   "phrase": "glove pet hair remover",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.8,
+   "bidMid": 2.47,
+   "bidHigh": 3.36
+  },
+  {
+   "phrase": "guante para quitar pelos de gato",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.17,
+   "bidMid": 2.9,
+   "bidHigh": 3.63
+  },
+  {
+   "phrase": "hair removal glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.82,
+   "bidMid": 2.43,
+   "bidHigh": 3.04
+  },
+  {
+   "phrase": "pet fur remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 2.33,
+   "bidMid": 3.11,
+   "bidHigh": 3.89
+  },
+  {
+   "phrase": "pet hair remover glove mitt",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.4,
+   "bidMid": 2.11,
+   "bidHigh": 2.77
+  },
+  {
+   "phrase": "pet remover glove",
+   "match": "exact",
+   "searchVolume": null,
+   "bidLow": 1.8,
+   "bidMid": 2.4,
+   "bidHigh": 3.0
+  }
+ ]
+}

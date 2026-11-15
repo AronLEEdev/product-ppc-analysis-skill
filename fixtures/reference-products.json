@@ -1,0 +1,47 @@
+{
+ "note": "Our own products, used as the comparison rows in every report and as calibration cases in the tests. Costs are the actual rows from Nov 2026; conversion is the ad conversion in the week of Nov 2-8, 2026.",
+ "products": [
+  {
+   "key": "phr",
+   "name": "Pet hair remover glove, $13.99",
+   "cerebro": "phr-cerebro-2026-10-26.json",
+   "amazonBids": "phr-bids-2026-11-10.json",
+   "actualConversion": 0.181,
+   "conversionNote": "actual, 15 reviews",
+   "product": {
+    "asin": "B0H6RKLND4",
+    "title": "Pet hair remover glove",
+    "price": 13.99,
+    "referralFee": 2.2272,
+    "fulfillmentFee": 5.06,
+    "landedCogs": 1.25,
+    "inboundFee": 0,
+    "storageFee": 0,
+    "returnLoss": 0.25,
+    "profitBeforePPC": 5.2028,
+    "cashPerSale": 6.4528
+   }
+  },
+  {
+   "key": "tote",
+   "name": "Canvas tote, $22.99 less coupon",
+   "cerebro": "tote-cerebro-2026-10-26.json",
+   "amazonBids": "tote-bids-2026-11-10.json",
+   "actualConversion": 0.038,
+   "conversionNote": "actual at launch, few reviews",
+   "product": {
+    "asin": "B0H6DTG2ZT",
+    "title": "Canvas tote",
+    "price": 21.2,
+    "referralFee": 3.339,
+    "fulfillmentFee": 8.0644,
+    "landedCogs": 5.176,
+    "inboundFee": 0,
+    "storageFee": 0,
+    "returnLoss": 0.65,
+    "profitBeforePPC": 3.9706,
+    "cashPerSale": 9.1466
+   }
+  }
+ ]
+}
