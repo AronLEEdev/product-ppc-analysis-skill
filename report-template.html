@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPC Analysis Report</title>
+<script src="ppc.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #1d1d1f; }
+.header { background: #1d1d1f; color: white; padding: 28px 36px; }
+.header h1 { font-size: 26px; font-weight: 700; }
+.header h1 span { color: #ff9f0a; }
+.header .sub { color: #aeaeb2; font-size: 13px; margin-top: 5px; line-height: 1.5; }
+.summary-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: #d2d2d7; border-bottom: 1px solid #d2d2d7; }
+.stat { background: white; padding: 18px 24px; }
+.stat .label { font-size: 10px; color: #6e6e73; text-transform: uppercase; letter-spacing: .05em; }
+.stat .value { font-size: 24px; font-weight: 600; margin-top: 4px; }
+.stat .hint { font-size: 11px; color: #6e6e73; margin-top: 2px; }
+.insight { margin: 24px 36px 0; background: #fff8e6; border: 1px solid #ffe066; border-radius: 10px; padding: 14px 18px; font-size: 13px; color: #7d5c00; line-height: 1.6; }
+.insight ul { margin: 6px 0 0 18px; }
+.section { padding: 28px 36px 8px; }
+.sec-title { font-size: 17px; font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+.sec-lead { font-size: 13px; color: #6e6e73; margin-bottom: 16px; line-height: 1.5; max-width: 860px; }
+.pill { font-size: 11px; padding: 2px 9px; border-radius: 10px; font-weight: 600; color: white; display: inline-block; }
+.v-PASS { background: #34c759; } .v-TEST { background: #ff9f0a; } .v-FAIL { background: #ff3b30; } .v-none { background: #aeaeb2; }
+.t-PASS { color: #1f8f3d; } .t-TEST { color: #c26a00; } .t-FAIL { color: #d70015; }
+.card { background: white; border-radius: 14px; padding: 22px; margin-bottom: 14px; box-shadow: 0 1px 3px rgba(0,0,0,.07); border: 1px solid #e5e5ea; }
+.card.best { border-color: #34c759; border-width: 2px; }
+.card-head { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+.card-title { font-size: 14px; font-weight: 600; line-height: 1.4; }
+.card-title a { color: #0071e3; text-decoration: none; }
+.card-sub { font-size: 12px; color: #6e6e73; margin-top: 4px; }
+.metrics { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-top: 16px; }
+.metric { background: #f5f5f7; border-radius: 10px; padding: 12px 14px; }
+.metric .ml { font-size: 10px; color: #6e6e73; text-transform: uppercase; letter-spacing: .05em; }
+.metric .mv { font-size: 19px; font-weight: 600; margin-top: 4px; }
+.metric .ms { font-size: 11px; color: #6e6e73; margin-top: 2px; line-height: 1.4; }
+table.t { width: 100%; border-collapse: collapse; font-size: 12px; background: white; }
+table.t th { background: #f5f5f7; padding: 7px 10px; text-align: left; font-weight: 600; font-size: 10px; color: #6e6e73; text-transform: uppercase; letter-spacing: .05em; border-bottom: 1px solid #e5e5ea; }
+table.t td { padding: 7px 10px; border-bottom: 1px solid #f0f0f2; vertical-align: top; }
+table.t tr.cand td { background: #f0faf3; font-weight: 600; }
+.r { text-align: right; font-variant-numeric: tabular-nums; }
+.wrap { overflow-x: auto; border-radius: 12px; border: 1px solid #e5e5ea; }
+.tag { font-size: 11px; padding: 1px 7px; border-radius: 6px; display: inline-block; }
+.tag-generic { background: #dff4e4; color: #1a6b30; }
+.tag-brand { background: #fef0cd; color: #7d5c00; }
+.tag-other { background: #f0f0f2; color: #3a3a3c; }
+.ok { color: #1f8f3d; font-weight: 600; }
+.muted { color: #8e8e93; }
+.warn-msg { background: #fff8e6; border: 1px solid #ffe066; border-radius: 8px; padding: 9px 13px; margin-top: 12px; font-size: 12px; color: #7d5c00; }
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+.mini-title { font-size: 11px; font-weight: 600; color: #6e6e73; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
+.footer { margin-top: 20px; padding: 22px 36px; border-top: 1px solid #e5e5ea; background: white; font-size: 11px; color: #6e6e73; line-height: 1.7; }
+.footer b { color: #3a3a3c; }
+.empty { padding: 60px 36px; font-size: 15px; color: #6e6e73; }
+.print-btn { position: fixed; right: 22px; bottom: 22px; background: #1d1d1f; color: #fff; border: 0; border-radius: 999px; padding: 12px 20px; font: 600 14px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,.28); }
+@media (max-width: 760px) {
+  .summary-bar, .metrics { grid-template-columns: repeat(2, 1fr); }
+  .two-col { grid-template-columns: 1fr; }
+  .header, .section, .footer { padding-left: 16px; padding-right: 16px; }
+  .insight { margin-left: 16px; margin-right: 16px; }
+}
+@media print {
+  .print-btn { display: none; }
+  @page { size: A4; margin: 12mm; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .card, .stat, .insight, tr { break-inside: avoid; }
+  .card { box-shadow: none; }
+  .header { background: #fff !important; color: #1d1d1f !important; border-bottom: 3px solid #c2691a; }
+  .header h1 { color: #1d1d1f !important; } .header .sub { color: #52525b !important; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<button class="print-btn" onclick="window.print()">Save as PDF</button>
+<script>
+(function () {
+  const D = window.__PPC_DATA__;
+  const app = document.getElementById('app');
+  if (!D) { app.innerHTML = '<div class="empty">No <code>ppc.js</code> found next to this page. Run <code>node ppc.mjs &lt;run-dir&gt; "&lt;keyword&gt;"</code> first, and serve the folder over http.</div>'; return; }
+
+  // null-safe formatting: unknown renders "—", never a phantom 0 (Number(null) === 0 trap)
+  const num = (v) => (v == null || v === '' || !Number.isFinite(Number(v)) ? null : Number(v));
+  const usd = (v, d = 2) => (num(v) == null ? '—' : (num(v) < 0 ? '−$' : '$') + Math.abs(num(v)).toFixed(d));
+  const pct = (v, d = 0) => (num(v) == null ? '—' : num(v) === Infinity ? 'never' : (num(v) * 100).toFixed(d) + '%');
+  const int = (v) => (num(v) == null ? '—' : Math.round(num(v)).toLocaleString('en-US'));
+  const months = (v) => (v === null ? 'never' : num(v) == null ? '—' : num(v) === 0 ? 'no launch loss' : num(v).toFixed(1) + ' mo');
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const pill = (v) => `<span class="pill v-${v || 'none'}">${v || 'n/a'}</span>`;
+
+  const T = D.thresholds || {};
+  const cpc = D.cpc || {};
+  const best = (D.results || []).find((r) => r.asin === D.bestAsin) || (D.results || [])[0];
+  const bm = best && best.market;
+  const raw = cpc.raw && num(cpc.raw.mid) != null && cpc.calibration && cpc.calibration !== 1
+    ? ` · Helium 10 raw ${usd(cpc.raw.mid)} × ${cpc.calibration}` : '';
+
+  let h = '';
+  h += `<div class="header"><h1>PPC analysis: <span>${esc(D.keyword)}</span></h1>
+    <div class="sub">Run ${esc(D.date)} · bids from ${esc(D.bidsSource || 'unknown source')}${D.bidsCapturedOn ? ', captured ' + esc(D.bidsCapturedOn) : ''} ·
+    ${int(cpc.keywords)} winnable keywords · mature conversion ${pct(D.matureConversion, 1)} (${esc(D.matureConversionSource || '')})</div></div>`;
+
+  h += `<div class="summary-bar">
+    <div class="stat"><div class="label">Verdict (best product)</div><div class="value">${pill(D.verdict)}</div><div class="hint">${best ? esc(best.asin) : '—'}</div></div>
+    <div class="stat"><div class="label">Market click price</div><div class="value">${usd(cpc.mid)}</div><div class="hint">range ${usd(cpc.low)}–${usd(cpc.high)}${raw}</div></div>
+    <div class="stat"><div class="label">Sales needed without ads</div><div class="value ${best ? 't-' + best.maturityVerdict : ''}">${best ? pct(best.requiredShare) : '—'}</div><div class="hint">to break even at ${pct(D.matureConversion, 1)} conversion</div></div>
+    <div class="stat"><div class="label">Launch payback</div><div class="value">${best && best.payback ? months(best.payback.paybackMonths) : '—'}</div><div class="hint">${best && best.payback ? 'launch loss ' + usd(best.payback.launchLoss, 0) : 'no units-per-week given'}</div></div>
+  </div>`;
+
+  const warns = (bm && bm.warnings) || [];
+  h += `<div class="insight"><b>How to read this.</b> A mature product does not pay for a click on every sale. The verdict is the share of sales that must come <b>without ads</b> for the product to break even:
+    PASS at ${pct(T.passShare)} or less, TEST up to ${pct(T.failShare)}, FAIL above; a ${Math.round(((D.stress || 1.3) - 1) * 100)}% rise in click prices can lower it one step, and a PASS whose launch takes over ${esc(T.paybackMonths)} months to pay back becomes TEST.
+    ${D.thresholdsProvisional ? '<b>These lines are provisional</b> until a product that actually passes calibrates them.' : ''}
+    ${warns.length ? '<ul>' + warns.map((w) => '<li>' + esc(w) + '</li>').join('') + '</ul>' : ''}</div>`;
+
+  // ── comparison with our own products
+  const refs = D.references || [];
+  if (best) {
+    const row = (name, note, c, be, share, v, m, cls) => `<tr class="${cls || ''}"><td>${name}<div class="muted" style="font-weight:400">${note}</div></td>
+      <td class="r">${usd(c)}</td><td class="r">${pct(be)}</td><td class="r">${pct(share)}</td><td>${pill(v)}</td>
+      <td class="r">${m ? int(m.winnableVolume) : '—'}<div class="muted">${m ? pct(m.winnableShare) + ' of top 50' : ''}</div></td>
+      <td class="r">${m ? (num(m.salesPer100Searches) == null ? '—' : num(m.salesPer100Searches).toFixed(2)) : '—'}</td>
+      <td class="r">${m ? pct(m.top3SalesShare) : '—'}</td></tr>`;
+    h += `<div class="section"><div class="sec-title">Against our own products</div>
+      <div class="sec-lead">The candidate beside the two products we already sell, read the same way. Our products are judged at their own measured ad conversion.</div>
+      <div class="wrap"><table class="t"><thead><tr><th>Product</th><th class="r">Click price</th><th class="r">Break-even conversion</th><th class="r">Sales needed without ads</th><th>Verdict</th><th class="r">Winnable searches / mo</th><th class="r">Sales per 100 searches</th><th class="r">Top-3 share of sales</th></tr></thead><tbody>
+      ${row('<b>' + esc(best.title || best.asin) + '</b>', 'candidate · ' + usd(best.price) + ' · at ' + pct(D.matureConversion, 1) + ' (assumed)', cpc.mid, best.breakEven, best.requiredShare, best.verdict, bm, 'cand')}
+      ${refs.map((r) => row(esc(r.name), 'at ' + pct(r.conversion, 1) + ' (' + esc(r.conversionNote) + ')', r.cpc && r.cpc.mid, r.breakEven, r.requiredShare, r.verdict, r.market)).join('')}
+      </tbody></table></div></div>`;
+  }
+
+  // ── per product
+  h += `<div class="section"><div class="sec-title">Products from the cost run <span class="muted" style="font-size:12px;font-weight:400">${(D.results || []).length} analysed · ${D.counts ? `${D.counts.PASS} pass · ${D.counts.TEST} test · ${D.counts.FAIL} fail` : ''}</span></div>
+    <div class="sec-lead">Each product at the same market click price. Profit per sale is before ads (cost skill); cash per sale treats stock and freight as already paid.</div>`;
+  for (const r of D.results || []) {
+    const pb = r.payback;
+    const sc = (r.scenarios || []).filter(Boolean);
+    h += `<div class="card ${r.asin === D.bestAsin ? 'best' : ''}">
+      <div class="card-head"><div><div class="card-title"><a href="https://www.amazon.com/dp/${esc(r.asin)}" target="_blank" rel="noopener">${esc(r.title || r.asin)}</a></div>
+      <div class="card-sub">${esc(r.asin)} · ${usd(r.price)} · profit before ads ${usd(r.profitBeforePPC)} · cash per sale ${usd(r.cashPerSale)}</div></div>
+      <div>${pill(r.verdict)}</div></div>
+      <div class="metrics">
+        <div class="metric"><div class="ml">Sales needed without ads</div><div class="mv t-${r.maturityVerdict}">${pct(r.requiredShare)}</div><div class="ms">${pct(r.requiredShareStressed)} if clicks cost ${Math.round(((D.stress || 1.3) - 1) * 100)}% more${r.steppedDown ? ' (stepped down)' : ''}</div></div>
+        <div class="metric"><div class="ml">Break-even conversion</div><div class="mv">${pct(r.breakEven)}</div><div class="ms">cash basis ${pct(r.breakEvenCash)} · ${esc(r.verdictCash || '—')} on cash</div></div>
+        <div class="metric"><div class="ml">Launch payback</div><div class="mv">${pb ? months(pb.paybackMonths) : '—'}</div><div class="ms">${pb ? 'loss ' + usd(pb.launchLoss, 0) + ' · then ' + usd(pb.steadyMonthlyProfit, 0) + '/mo' : 'no units-per-week given'}${r.slowPayback && r.maturityVerdict === 'PASS' ? ' · lowered to TEST' : ''}</div></div>
+        <div class="metric"><div class="ml">Lowest viable price</div><div class="mv">${usd(r.lowestViablePrice)}</div><div class="ms">reaches the PASS line at ${pct(D.matureConversion, 1)}</div></div>
+      </div>
+      <div class="two-col">
+        <div><div class="mini-title">At other conversion rates</div><table class="t"><thead><tr><th class="r">Conversion</th><th class="r">Expected ACoS</th><th class="r">Affordable click</th><th class="r">Sales needed without ads</th></tr></thead><tbody>
+          ${sc.map((s) => `<tr><td class="r">${pct(s.conversion)}</td><td class="r">${pct(s.expectedAcos)}</td><td class="r">${usd(s.affordableCpc)}</td><td class="r">${pct(s.requiredShare)}</td></tr>`).join('')}
+        </tbody></table></div>
+        <div><div class="mini-title">Launch, by month (profit basis)</div>${pb ? `<table class="t"><thead><tr><th>Weeks</th><th class="r">Sales without ads</th><th class="r">Result</th></tr></thead><tbody>
+          ${[0, 4, 8].map((s) => { const wk = pb.byWeek.slice(s, s + 4); const net = wk.reduce((a, w) => a + w.net, 0); return `<tr><td>${s + 1}–${s + wk.length}</td><td class="r">${pct(wk[0].organicShare)}–${pct(wk[wk.length - 1].organicShare)}</td><td class="r ${net < 0 ? 't-FAIL' : 'ok'}">${usd(net, 0)}</td></tr>`; }).join('')}
+          </tbody></table><div class="muted" style="font-size:11px;margin-top:6px">${int(pb.assumptions.unitsPerWeek)} units/week · launch conversion ${pct(pb.assumptions.launchConversion, 1)} · sales without ads climb to ${pct(pb.assumptions.matureShare)} by week ${pb.assumptions.weeks}</div>` : '<div class="muted" style="font-size:12px">Run with <code>--units-per-week</code> to see the launch cost.</div>'}</div>
+      </div>
+    </div>`;
+  }
+  h += `</div>`;
+
+  // ── keyword market
+  const kws = D.keywords || [];
+  const afford = bm ? num(bm.affordableCpc) : null;
+  const factor = num(cpc.calibration) || 1;
+  if (kws.length) {
+    h += `<div class="section"><div class="sec-title">Keyword market</div>
+      <div class="sec-lead">Only <b>generic</b> keywords count as winnable; competitor brand names and other products are shown but excluded from the click price.
+      ${bm ? `Winnable: <b>${int(bm.winnableVolume)}</b> of ${int(bm.totalVolume)} searches a month (${pct(bm.winnableShare)}). Affordable click for the best product: <b>${usd(afford)}</b>; ${int(bm.affordableVolume)} winnable searches have clicks at or under it.` : ''}
+      Tags marked by the skill can be wrong: correct them in <code>bids.json</code> and re-run.</div>
+      <div class="wrap"><table class="t"><thead><tr><th>Keyword</th><th>Tag</th><th class="r">Searches / mo</th><th class="r">Bid${factor !== 1 ? ' (× ' + factor + ')' : ''}</th><th class="r">Est. sales / mo</th><th class="r">Top-3 share</th><th>Affordable?</th></tr></thead><tbody>
+      ${kws.map((k) => { const b = num(k.bidMid) == null ? null : num(k.bidMid) * factor; const ok = k.tag === 'generic' && afford != null && b != null && b <= afford;
+        return `<tr><td>${esc(k.phrase)}${k.tagReason ? '<div class="muted">' + esc(k.tagReason) + '</div>' : ''}</td><td><span class="tag tag-${esc(k.tag)}">${esc(k.tag)}</span></td>
+        <td class="r">${int(k.searchVolume)}</td><td class="r">${usd(b)}${factor !== 1 && num(k.bidMid) != null ? '<div class="muted">raw ' + usd(k.bidMid) + '</div>' : ''}</td>
+        <td class="r">${int(k.keywordSales)}</td><td class="r">${pct(k.top3ConvShare)}</td><td>${k.tag !== 'generic' ? '<span class="muted">excluded</span>' : ok ? '<span class="ok">yes</span>' : b == null ? '<span class="muted">no bid</span>' : 'no'}</td></tr>`; }).join('')}
+      </tbody></table></div></div>`;
+  }
+
+  h += `<div class="footer"><b>Definitions.</b> Click price = search-volume-weighted suggested bid over winnable keywords${factor !== 1 ? ', scaled ×' + factor + ' from Helium 10 to the level Amazon quotes a new listing' : ''}.
+    Break-even conversion = click price ÷ profit per sale. Sales needed without ads = 1 − profit per sale × mature conversion ÷ click price.
+    Payback = 12-week launch loss (conversion at half the mature rate, sales without ads climbing to ${pct(T.passShare)}) ÷ steady monthly profit.
+    Lowest viable price holds FBA, landed cost and return loss fixed and scales referral with price.<br>
+    <b>Assumptions to check:</b> mature conversion ${pct(D.matureConversion, 1)} (${esc(D.matureConversionSource || '')}) · units per week ${int(D.unitsPerWeek)} · bid scaling ×${factor} · lines ${pct(T.passShare)} / ${pct(T.failShare)} / ${esc(T.paybackMonths)} months${D.thresholdsProvisional ? ' (provisional)' : ''}.
+    Generated by <b>product-ppc-analysis</b>. Suggested bids drift; the capture date is in the header.</div>`;
+
+  app.innerHTML = h;
+  document.title = 'PPC Analysis — ' + D.keyword;
+})();
+</script>
+</body>
+</html>

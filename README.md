@@ -4,8 +4,9 @@ Prices a product's advertising from **market click costs** before you order stoc
 [product-research-skills](https://github.com/AronLEEdev/product-research-skills) pipeline
 (Discovery → Cost → **PPC** → Review).
 
-> **Status: work in progress.** The math core (`ppc.mjs`) and its tests are here. The `SKILL.md`
-> that drives the browser steps and the HTML report are not written yet.
+> **Status:** usable. `SKILL.md` drives the run, `ppc.mjs` does the math (tested), and
+> `report-template.html` renders `ppc.js`. The verdict lines, the 1.8 bid scaling and the 10%
+> mature conversion are provisional until a product that actually passes calibrates them.
 
 ## Why
 
@@ -47,6 +48,8 @@ as the comparison rows:
 - `reference-products.json` — unit economics and actual ad conversion of the two products
 
 ## Use
+
+Install as a skill (see `SKILL.md`), or run the calculator directly:
 
 ```
 node ppc.mjs <run-dir> "<keyword>" [--units-per-week N] [--mature-conversion 0.10]

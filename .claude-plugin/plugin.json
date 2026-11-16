@@ -1,0 +1,11 @@
+{
+  "name": "product-ppc-analysis",
+  "displayName": "Product PPC Analysis (Ad Cost from Market Bids)",
+  "version": "1.0.0",
+  "description": "Prices a product's Amazon ads from market click costs before you order: Helium 10 Cerebro suggested bids → break-even conversion, the share of sales that must come without ads, launch payback, lowest viable price and the keyword market, beside reference products.",
+  "author": { "name": "Aron Lee", "url": "https://github.com/AronLEEdev" },
+  "homepage": "https://github.com/AronLEEdev/product-ppc-analysis-skill",
+  "repository": "https://github.com/AronLEEdev/product-ppc-analysis-skill",
+  "license": "MIT",
+  "keywords": ["amazon", "fba", "product-research", "ppc", "cpc", "helium10", "advertising", "claude-skill"]
+}
