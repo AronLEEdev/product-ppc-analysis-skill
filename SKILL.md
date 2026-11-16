@@ -192,7 +192,7 @@ Then `navigate` to `http://localhost:7880/ppc-report.html` (a `file://` URL cann
 ```js
 JSON.stringify({ verdict: document.querySelector('.summary-bar .pill')?.textContent,
   cards: document.querySelectorAll('.card').length,
-  keywords: document.querySelectorAll('.section:last-of-type tbody tr').length })
+  keywords: document.querySelectorAll('#kw tbody tr').length })
 ```
 
 ## Reading the verdict (tell the user this, briefly)

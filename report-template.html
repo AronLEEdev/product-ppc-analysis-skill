@@ -168,7 +168,7 @@ table.t tr.cand td { background: #f0faf3; font-weight: 600; }
       <div class="sec-lead">Only <b>generic</b> keywords count as winnable; competitor brand names and other products are shown but excluded from the click price.
       ${bm ? `Winnable: <b>${int(bm.winnableVolume)}</b> of ${int(bm.totalVolume)} searches a month (${pct(bm.winnableShare)}). Affordable click for the best product: <b>${usd(afford)}</b>; ${int(bm.affordableVolume)} winnable searches have clicks at or under it.` : ''}
       Tags marked by the skill can be wrong: correct them in <code>bids.json</code> and re-run.</div>
-      <div class="wrap"><table class="t"><thead><tr><th>Keyword</th><th>Tag</th><th class="r">Searches / mo</th><th class="r">Bid${factor !== 1 ? ' (× ' + factor + ')' : ''}</th><th class="r">Est. sales / mo</th><th class="r">Top-3 share</th><th>Affordable?</th></tr></thead><tbody>
+      <div class="wrap"><table class="t" id="kw"><thead><tr><th>Keyword</th><th>Tag</th><th class="r">Searches / mo</th><th class="r">Bid${factor !== 1 ? ' (× ' + factor + ')' : ''}</th><th class="r">Est. sales / mo</th><th class="r">Top-3 share</th><th>Affordable?</th></tr></thead><tbody>
       ${kws.map((k) => { const b = num(k.bidMid) == null ? null : num(k.bidMid) * factor; const ok = k.tag === 'generic' && afford != null && b != null && b <= afford;
         return `<tr><td>${esc(k.phrase)}${k.tagReason ? '<div class="muted">' + esc(k.tagReason) + '</div>' : ''}</td><td><span class="tag tag-${esc(k.tag)}">${esc(k.tag)}</span></td>
         <td class="r">${int(k.searchVolume)}</td><td class="r">${usd(b)}${factor !== 1 && num(k.bidMid) != null ? '<div class="muted">raw ' + usd(k.bidMid) + '</div>' : ''}</td>
